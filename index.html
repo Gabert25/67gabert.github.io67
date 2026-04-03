@@ -17,3 +17,61 @@
     <a href="https://snapchat.com" class="button snapchat">Snapchat Web</a>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Learning Hub</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); color: white;
+        }
+        h1 { margin-bottom: 30px; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); letter-spacing: 2px; }
+        
+        .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; width: 80%; max-width: 900px; }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px;
+            padding: 30px; text-align: center; text-decoration: none; color: white;
+            transition: all 0.3s ease; box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+        }
+        .card:hover { transform: translateY(-10px); background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.5); }
+        .card h2 { margin: 0; font-size: 1.5rem; }
+        .card p { font-size: 0.9rem; opacity: 0.8; margin-top: 10px; }
+
+        /* Brand Colors for Accents */
+        .coolmath { border-bottom: 5px solid #ff4500; }
+        .hooda { border-bottom: 5px solid #00c8ff; }
+        .playground { border-bottom: 5px solid #7CFC00; }
+    </style>
+</head>
+<body>
+
+    <h1>MATH LEARNING HUB</h1>
+
+    <div class="container">
+        <!-- Coolmath Games -->
+        <a href="https://coolmathgames.com" target="_blank" class="card coolmath">
+            <h2>Coolmath Games</h2>
+            <p>Strategy, Logic & Skill</p>
+        </a>
+
+        <!-- Hooda Math -->
+        <a href="https://hoodamath.com" target="_blank" class="card hooda">
+            <h2>Hooda Math</h2>
+            <p>Math Games & Puzzles</p>
+        </a>
+
+        <!-- Math Playground -->
+        <a href="https://mathplayground.com" target="_blank" class="card playground">
+            <h2>Math Playground</h2>
+            <p>Give Your Brain a Workout</p>
+        </a>
+    </div>
+
+</body>
+</html>
