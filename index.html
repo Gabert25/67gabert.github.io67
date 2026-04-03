@@ -19,4 +19,10 @@
 </bogit clone https://github.com/art-class/v4.git
 <
 const ytmusic = require('node-youtube-music');
+const ytmusic = require('node-youtube-music');
+
+// Search for a song
+ytmusic.searchMusics('Never Gonna Give You Up').then(songs => {
+  console.log(songs[0]); // Returns the first matching song object
+});
 
